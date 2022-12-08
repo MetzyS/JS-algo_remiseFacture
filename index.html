@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EXO JS - Remise</title>
+</head>
+
+<body>
+    <header>
+        <div class="facture-h">
+            <div class="head-left"><span><input type="text" name="nomentreprise" id="nomentreprise"
+                        placeholder="[Nom de l'entreprise]"></span></div>
+            <div class="head-right"><span>FACTURE</span></div>
+        </div>
+    </header>
+    <main>
+        <div class="infos-wrapper">
+            <div class="infos-left">
+                <span>10 rue des Orchidées</span>
+
+                <span>34000, Montpellier</span>
+
+                <span>09.91.19.91.19</span>
+            </div>
+            <div class="infos-right">
+                <table>
+                    <thead class="infotab">
+                        <tr>
+                            <th style="width:10vw">N° de Facture</th>
+                            <th style="width:10vw">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="numfac" id="numfac" placeholder="[N° de Facture]"></td>
+                            <td><input type="text" name="datefac" id="datefac" placeholder="[Date]"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <form action="" id="form1">
+            <table class="tabled">
+                <thead>
+                    <tr>
+                        <th style="width:65%">Description</th>
+                        <th style="width:5%">Qté</th>
+                        <th style="width:10%">P.U</th>
+                        <th style="width:20%">Montant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="description1" id="description1"
+                                placeholder="[Description du produit/service]" value=""></td>
+                        <td><input type="text" name="qte1" id="qte1" placeholder="[Quantité]"></td>
+                        <td><input type="text" name="pu1" id="pu1" placeholder="[Prix Unitaire]"></td>
+                        <td id="montant1"></td>
+                    </tr>
+                    <!-- <tr>
+                    <td><input type="text" name="description2" id="description2"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte2" id="qte2" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu2" id="pu2" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant2"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description3" id="description3"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte3" id="qte3" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu3" id="pu3" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant3"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description4" id="description4"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte4" id="qte4" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu4" id="pu4" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant4"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description5" id="description5"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte5" id="qte5" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu5" id="pu5" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant5"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description6" id="description6"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte6" id="qte6" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu6" id="pu6" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant6"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description7" id="description7"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte7" id="qte7" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu7" id="pu7" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant7"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description8" id="description8"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte8" id="qte8" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu8" id="pu8" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant8"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description9" id="description9"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte9" id="qte9" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu9" id="pu9" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant9"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="description10" id="description10"
+                            placeholder="[Description du produit/service]"></td>
+                    <td><input type="text" name="qte10" id="qte10" placeholder="[Quantité]"></td>
+                    <td><input type="text" name="pu10" id="pu10" placeholder="[Prix Unitaire]"></td>
+                    <td id="montant10"></td>
+                </tr> -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td style="visibility:hidden"></td>
+                        <th colspan="2">Sous-total</th>
+                        <td id="soustotal"></td>
+                    </tr>
+                    <tr>
+                        <td style="visibility:hidden"></td>
+                        <th colspan="2">Remise </th>
+                        <td id="remise"></td>
+                    </tr>
+                    <tr>
+                        <td style="visibility:hidden"></td>
+                        <th colspan="2">TVA (20%)</th>
+                        <td id="tva"></td>
+                    </tr>
+                    <tr>
+                        <td style="visibility:hidden"></td>
+                        <th colspan="2">Total</th>
+                        <td id="total"></td>
+                    </tr>
+                </tfoot>
+        </form>
+        <!-- <button id="lebouton">Blablabla</button> -->
+        <br><br>
+    </main>
+</body>
+<script src="main.js"></script>
+
+</html>

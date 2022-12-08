@@ -1,0 +1,79 @@
+:root {
+    --title-text-c: #7a7a7a;
+    --tab-title-bcg: #7a7a7a;
+}
+* {
+    padding: 0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* border-collapse: collapse; */
+}
+
+input {
+    height: 1.5rem;
+}
+.facture-h, .infos-wrapper {
+    display:flex;
+    width: 100vw;
+    height: max-content;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.infos-left, .infos-right {
+    display:flex;
+    flex-direction: column;
+    width: 50vw;
+}
+.infos-right {
+    justify-content: end;
+    align-items: end;
+}
+.head-left, .infos-left {
+    margin-left: 30px;
+}
+.infos-left {
+    gap: 5px;
+}
+
+.head-right, .infos-right {
+    margin-right: 30px;
+}
+.head-right span {
+    color: var(--title-text-c);
+    font-size: 2rem;
+    font-weight: bold;
+}
+th {
+    color: white;
+    background-color: #7a7a7a;
+}
+tr, td, th, thead {
+    border: 1px solid black;
+    height: 25px;
+}
+
+.test {
+    width: 20vw;
+}
+
+tbody tr td input {
+width: 100%;
+}
+
+#soustotal {
+    font-weight: bold;
+}
+
+#tva {
+    color: red;
+}
+
+#remise {
+    color: green;
+}
+
+#total {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
